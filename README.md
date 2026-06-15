@@ -165,6 +165,77 @@ This information is commonly used during network monitoring, incident response, 
 
 ![Source and Destination Analysis](Wireshark/06_DNS_Source_Destination.PNG)
 
+## Key Findings
+
+During the investigation, several important findings were identified:
+
+* DNS traffic was successfully captured using Wireshark.
+* DNS queries and responses were identified and analyzed.
+* A DNS query for github.com was observed.
+* The DNS server successfully resolved github.com.
+* The returned IPv4 address was 140.82.113.3.
+* Communication between the DNS service and the client system was successfully identified.
+* Source and destination addresses were analyzed.
+* DNS activity was consistent with normal web browsing behavior.
+
+---
+
+## Skills Demonstrated
+
+This project provided hands-on experience with:
+
+* Wireshark Packet Analysis
+* DNS Traffic Monitoring
+* DNS Query Investigation
+* DNS Response Analysis
+* Network Traffic Analysis
+* Packet Inspection
+* Source and Destination Analysis
+* Network Monitoring
+* Threat Hunting Fundamentals
+* Evidence Collection and Documentation
+* SOC Investigation Methodology
+
+---
+
+## Lessons Learned
+
+Throughout this project, I gained practical experience in:
+
+* Capturing DNS traffic using Wireshark.
+* Understanding how DNS queries and responses operate within a network.
+* Identifying domain resolution activity.
+* Analyzing source and destination communication paths.
+* Interpreting packet-level network data.
+* Investigating network traffic from a defensive cybersecurity perspective.
+* Applying traffic analysis techniques commonly used in SOC environments.
+* Collecting and documenting evidence in a structured investigation.
+
+This exercise strengthened my understanding of DNS communications, packet analysis, and network monitoring techniques used by security analysts during investigations.
+
+---
+
+## SOC Analyst Assessment
+
+The investigation demonstrated how DNS traffic can provide valuable visibility into network activity and domain resolution behavior.
+
+The analysis identified a DNS query for github.com and confirmed that the DNS server successfully returned the IPv4 address 140.82.113.3. The communication flow between the DNS service and the client system was successfully reconstructed using packet capture data.
+
+No suspicious domains, abnormal communication patterns, or indicators of malicious activity were identified during the investigation. The observed activity was consistent with legitimate web browsing behavior.
+
+This methodology can be applied in real-world SOC environments to identify suspicious domains, investigate potential command-and-control communications, and monitor network activity during security investigations.
+
+---
+
+## Conclusion
+
+This project demonstrated the investigation of DNS traffic using Wireshark.
+
+By capturing and analyzing DNS communications, it was possible to identify domain resolution activity, review DNS queries and responses, and understand how systems locate remote services across a network.
+
+The investigation provided practical experience in packet analysis, DNS monitoring, network traffic investigation, and evidence collection techniques commonly used by SOC analysts and cybersecurity professionals.
+
+This project highlights the importance of DNS analysis as a fundamental component of network security monitoring and incident response operations.
 
 
 
