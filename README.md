@@ -30,7 +30,7 @@ Wireshark is a widely used packet analysis tool that provides visibility into ne
 
 Selecting the correct interface is an important first step because it ensures that relevant traffic is captured during the investigation.
 
-![Wireshark Interface](Wireshark/01_Wireshark_Interface.png)
+![Wireshark Interface](Wireshark/01_Wireshark_Interface.PNG)
 
 ---
 
@@ -48,7 +48,7 @@ Applying protocol filters helps analysts focus on specific types of traffic and 
 
 This approach is commonly used in SOC environments when analyzing DNS communications, HTTP traffic, authentication protocols, and other network activity.
 
-![DNS Filter](Wireshark/02_DNS_Filter.png)
+![DNS Filter](Wireshark/02_DNS_Filter.PNG)
 
 ---
 
@@ -67,7 +67,7 @@ As the browser attempted to access these domains, DNS queries and responses were
 
 The resulting packet capture provided the evidence required for further analysis of domain resolution activity.
 
-![DNS Traffic](Wireshark/03_DNS_Traffic.png)
+![DNS Traffic](Wireshark/03_DNS_Traffic.PNG)
 
 
 
