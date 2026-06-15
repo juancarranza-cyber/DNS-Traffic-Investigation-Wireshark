@@ -135,6 +135,35 @@ This type of analysis is commonly performed during network investigations, threa
 
 ![DNS Response](Wireshark/05_DNS_Response.PNG)
 
+## 6. Source and Destination Analysis
+
+The DNS communication was further analyzed by reviewing the source and destination addresses recorded within the packet capture.
+
+### Network Information
+
+**Source**
+
+```text id="jwhv6j"
+192.168.100.1
+```
+
+**Destination**
+
+```text id="2l36tz"
+192.168.100.4
+```
+
+### Analysis
+
+The captured packet represented a DNS response transmitted from the local DNS service to the client device.
+
+The source address 192.168.100.1 corresponds to the local network gateway or DNS server, while the destination address 192.168.100.4 corresponds to the client system that initiated the DNS request.
+
+Analyzing source and destination information allows security analysts to understand communication flows, identify where requests originate, and determine how responses are delivered across a network.
+
+This information is commonly used during network monitoring, incident response, and traffic analysis investigations.
+
+![Source and Destination Analysis](Wireshark/06_DNS_Source_Destination.PNG)
 
 
 
