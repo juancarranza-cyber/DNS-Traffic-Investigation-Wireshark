@@ -69,6 +69,72 @@ The resulting packet capture provided the evidence required for further analysis
 
 ![DNS Traffic](Wireshark/03_DNS_Traffic.PNG)
 
+## 4. DNS Query Analysis
+
+A DNS query generated while accessing GitHub was selected for detailed analysis.
+
+The captured packet recorded a DNS request for the domain github.com.
+
+### Query Information
+
+**Query Name**
+
+```text
+github.com
+```
+
+**Record Type**
+
+```text
+HTTPS
+```
+
+### Analysis
+
+The DNS query requested information associated with the github.com domain.
+
+DNS queries allow systems to locate remote services by translating human-readable domain names into information that can be used to establish network communications.
+
+Monitoring DNS queries provides valuable visibility into the domains accessed by systems and is commonly used during threat hunting, network monitoring, and incident response investigations.
+
+![DNS Query](Wireshark/04_DNS_Query.PNG)
+
+## 5. DNS Response Analysis
+
+The corresponding DNS response was reviewed to identify the information returned by the DNS server.
+
+The response successfully resolved the github.com domain and provided the IPv4 address associated with the service.
+
+### Response Information
+
+**Domain**
+
+```text id="0xq9rj"
+github.com
+```
+
+**Record Type**
+
+```text id="5q6f4q"
+A (Host Address)
+```
+
+**Resolved IP Address**
+
+```text id="5d8hzc"
+140.82.113.3
+```
+
+### Analysis
+
+The DNS server successfully resolved github.com and returned the IPv4 address 140.82.113.3.
+
+DNS responses provide the information required for a client device to establish communication with remote services. By reviewing DNS responses, analysts can identify the infrastructure associated with a domain and better understand network communication patterns.
+
+This type of analysis is commonly performed during network investigations, threat hunting activities, and incident response operations.
+
+![DNS Response](Wireshark/05_DNS_Response.PNG)
+
 
 
 
